@@ -1,0 +1,49 @@
+/* MVP Launcher — Brand Tokens
+   Replace the CSS custom properties below with your brand colors from Phase 2.
+   These tokens are referenced throughout the app via Tailwind's theme config. */
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  /* Brand Colors — replace with your palette */
+  --color-primary: {{PRIMARY}};
+  --color-secondary: {{SECONDARY}};
+  --color-background: {{BACKGROUND}};
+  --color-surface: {{SURFACE}};
+  --color-text: {{TEXT}};
+
+  /* shadcn/ui tokens mapped to brand */
+  --color-foreground: var(--color-text);
+  --color-card: var(--color-surface);
+  --color-card-foreground: var(--color-text);
+  --color-popover: var(--color-surface);
+  --color-popover-foreground: var(--color-text);
+  --color-primary-foreground: #ffffff;
+  --color-secondary-foreground: var(--color-text);
+  --color-muted: var(--color-surface);
+  --color-muted-foreground: color-mix(in srgb, var(--color-text) 60%, transparent);
+  --color-accent: var(--color-surface);
+  --color-accent-foreground: var(--color-text);
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: color-mix(in srgb, var(--color-text) 10%, transparent);
+  --color-input: color-mix(in srgb, var(--color-text) 10%, transparent);
+  --color-ring: var(--color-primary);
+
+  --radius: 0.625rem;
+}
+
+/* Google Fonts — replace with your chosen fonts */
+/* @import url('https://fonts.googleapis.com/css2?family={{HEADING_FONT}}:wght@600;700&family={{BODY_FONT}}:wght@400;500;600&display=swap'); */
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  /* font-family: '{{BODY_FONT}}', system-ui, sans-serif; */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: '{{HEADING_FONT}}', system-ui, sans-serif; */
+}

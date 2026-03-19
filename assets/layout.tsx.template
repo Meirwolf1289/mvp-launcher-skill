@@ -1,0 +1,54 @@
+// MVP Launcher — Root Layout Template
+// Replace placeholders ({{...}}) with your brand values
+
+import type { Metadata } from "next";
+import { {{BODY_FONT_IMPORT}} } from "next/font/google";
+import "./globals.css";
+
+const bodyFont = {{BODY_FONT_IMPORT}}({
+  subsets: ["latin"],
+  variable: "--font-body",
+});
+
+export const metadata: Metadata = {
+  title: "{{PRODUCT_NAME}}",
+  description: "{{TAGLINE}}",
+  openGraph: {
+    title: "{{PRODUCT_NAME}}",
+    description: "{{TAGLINE}}",
+    url: "{{DEPLOYED_URL}}",
+    siteName: "{{PRODUCT_NAME}}",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "{{PRODUCT_NAME}}",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "{{PRODUCT_NAME}}",
+    description: "{{TAGLINE}}",
+    images: ["/og.png"],
+  },
+  icons: {
+    icon: "/favicon.svg",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={`${bodyFont.variable} antialiased`}>
+        {children}
+      </body>
+    </html>
+  );
+}
