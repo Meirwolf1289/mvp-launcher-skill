@@ -21,9 +21,25 @@ Tell Claude your app idea. It handles the rest:
 
 ## Installation
 
+### Claude Code (Plugin — recommended)
 ```bash
-cp -r mvp-launcher ~/.claude/skills/
+claude marketplace add https://github.com/Meirwolf1289/mvp-launcher-skill.git
+claude plugin install mvp-launcher
 ```
+
+### Claude Code (Manual)
+```bash
+git clone https://github.com/Meirwolf1289/mvp-launcher-skill.git /tmp/mvp-launcher
+cp -r /tmp/mvp-launcher/.claude/skills/mvp-launcher ~/.claude/skills/
+```
+
+### Cowork / Claude.ai
+Add the marketplace and install:
+```bash
+claude marketplace add https://github.com/Meirwolf1289/mvp-launcher-skill.git
+claude plugin install mvp-launcher
+```
+Or copy the `SKILL.md` contents into your project knowledge.
 
 ## Usage
 

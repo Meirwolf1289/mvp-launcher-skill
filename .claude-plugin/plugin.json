@@ -1,0 +1,11 @@
+{
+  "name": "mvp-launcher",
+  "description": "End-to-end MVP builder — from idea to deployed product in 30 minutes. 6-phase pipeline: Discovery, Brand, Design, Build (Next.js + shadcn/ui), Deploy (Vercel), Launch Kit. Actions: build app, create product, launch MVP, prototype idea, build SaaS, create dashboard, make landing page. Includes logo generator, OG image generator, 10 brand palettes, page pattern library.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Meirwolf1289"
+  },
+  "license": "MIT",
+  "keywords": ["mvp", "launcher", "nextjs", "react", "vercel", "shadcn", "startup", "deploy", "branding", "landing-page"],
+  "skills": ["./.claude/skills/mvp-launcher"]
+}

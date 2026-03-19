@@ -1,0 +1,25 @@
+{
+  "name": "mvp-launcher-skill",
+  "id": "mvp-launcher-skill",
+  "owner": {
+    "name": "Meirwolf1289"
+  },
+  "metadata": {
+    "description": "End-to-end MVP builder — from idea to deployed product in 30 minutes with Next.js, shadcn/ui, and Vercel",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "mvp-launcher",
+      "source": "./",
+      "description": "End-to-end MVP builder that takes an idea and delivers a fully deployed product. Orchestrates discovery, branding, UI/UX design, React/Next.js code generation with shadcn/ui, Vercel deployment, and launch kit creation.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Meirwolf1289"
+      },
+      "keywords": ["mvp", "launcher", "nextjs", "react", "vercel", "shadcn", "startup", "deploy", "branding"],
+      "category": "development",
+      "strict": false
+    }
+  ]
+}
